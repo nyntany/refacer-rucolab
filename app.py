@@ -26,7 +26,7 @@ parser.add_argument("--server_name", help="Server IP address", default="127.0.0.
 parser.add_argument("--server_port", help="Server port", type=int, default=7860)
 parser.add_argument("--colab_performance", help="Use in colab for better performance", default=False,action="store_true")
 parser.add_argument("--tensorrt", help="TensorRT activate", default=False,action="store_true")
-parser.add_argument("--gpu-threads", help="number of threads to be use for the GPU", dest="gpu_threads", type=int, default=1)
+parser.add_argument("--gpu-threads", help="number of threads to be use for the GPU", dest="gpu_threads", type=int, default=4)
 parser.add_argument('--max-memory', help='maximum amount of RAM in GB to be used', dest='max_memory', type=int)
 parser.add_argument('--video_quality', help='настроить качество выходного видео', dest='video_quality', type=int, default=18, choices=range(52), metavar='[0-51]')
 parser.add_argument("--frame_limit", help="Maximum number of frames to process at once", dest='frame_limit', type=int, default=1000)
